@@ -1,0 +1,69 @@
+:root {
+    --primary-dark: rgb(84, 39, 156);
+    --primary-light: rgb(135, 63, 194);
+    --secundary-light: rgb(235, 193, 104);
+    --primary-light-text: rgb(225, 158, 252);
+}
+
+#calculadora {
+    width: 40vh;
+    min-width: 400px;
+    height: 50vh;
+    min-height: 500px;
+
+    background-color: var(--primary-dark);
+}
+
+#mainInput {
+    height: 20%;
+    width: 100%;
+    font-size: 30px;
+
+    text-align: center;
+
+    border: 0;
+    outline: none;
+}
+
+#calculadora input[type=button] {
+    min-width: 25%;
+    flex-grow: 1;
+    font-size: 20px;
+
+    border: 1 inset;
+    border-color: #fff;
+    
+    color: #fff;
+    background-color: var(--primary-light);
+}
+
+#calculadora input[type=button]:hover {
+    transition: .1s;
+
+    color: #000;
+    background-color: var(--secundary-light);
+}
+
+#otherButtons {
+    width: 100%;
+    height: 15%;
+}
+
+#allButtons {
+    width: 100%;
+    height: 65%;
+}
+
+#numButtons {
+    width: 80%;
+    height: 100%;
+}
+
+#operButtons {
+    width: 20%;
+    height: 100%;
+}
+
+#zero {
+    flex-grow: 2 !important;
+}
